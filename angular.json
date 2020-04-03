@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angulaFakeTwitter"
+    }
+  },
+  "defaultProject": "angulaFakeTwitter",
+  "cli": {
+    "analytics": false
+  }
 }
