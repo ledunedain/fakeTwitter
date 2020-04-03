@@ -23,9 +23,12 @@ export class TweetComponent implements OnInit {
 
   adicionarTweet (addTweet){
     console.log("texto: ",addTweet.texto," autor: ", addTweet.autor );
-    this.miTweet.texto=addTweet.texto;
-    this.miTweet.autor=addTweet.autor;
-    this.listaTweets.push(this.miTweet);
+    const newTweet = {
+      ...addTweet,
+      id: this.listaTweets.length+1
+    }
+    console.log(newTweet);
+    this.listaTweets.push(newTweet);
   }
 
   ngOnInit(): void {
